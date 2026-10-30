@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SiteProof test app</title>
+  <style>
+    :root { --bg: #f5f7f4; --fg: #14201a; --card: #ffffff; --accent: #0f3d2a; --muted: #5b6b62; --line: #dbe3dd; }
+    @media (prefers-color-scheme: dark) { :root { --bg: #0e1511; --fg: #e8efe9; --card: #16201a; --accent: #3fae7c; --muted: #9bb0a3; --line: #2a3a31; } }
+    body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.5 system-ui, sans-serif; }
+    main { max-width: 520px; margin: 0 auto; padding: 24px 16px 48px; }
+    h1 { font-size: 24px; margin: 8px 0 4px; }
+    p { margin: 8px 0; }
+    .card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 16px; margin-top: 16px; }
+    .button { display: block; text-align: center; background: var(--accent); color: #fff; text-decoration: none; font-weight: 600; font-size: 18px; padding: 16px; border-radius: 12px; }
+    @media (prefers-color-scheme: dark) { .button { color: #04130b; } }
+    .muted { color: var(--muted); font-size: 14px; }
+    ol { padding-left: 20px; margin: 8px 0; }
+    li { margin: 6px 0; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>SiteProof test app</h1>
+  <p class="muted">Android only. Build 2, 2026-10-30 00:37 UTC, 61M.</p>
+
+  <div class="card">
+    <a class="button" href="SiteProof.apk" download>Download the app</a>
+  </div>
+
+  <div class="card">
+    <strong>Install it on your phone</strong>
+    <ol>
+      <li>Open this page on your Android phone and tap <em>Download the app</em>.</li>
+      <li>When the download finishes, tap <em>Open</em> (or open the file from your Downloads).</li>
+      <li>If your phone asks, allow installing from this source (Chrome or Files), then tap <em>Install</em>.</li>
+      <li>If Google Play Protect warns that the app is unknown, choose <em>More details</em>, then <em>Install anyway</em>. This is a test build that is not on the Play Store.</li>
+    </ol>
+    <p class="muted">A newer build installs over an older one and keeps your sign-in.</p>
+  </div>
+
+  <div class="card">
+    <strong>Signing in</strong>
+    <p>Your invitation arrives by email. Open that email on this phone and tap its link: it opens the app and asks you to choose a password.</p>
+  </div>
+</main>
+</body>
+</html>
